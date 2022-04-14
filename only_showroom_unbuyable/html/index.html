@@ -1,0 +1,15 @@
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <script>
+            window.addEventListener('message', (e) => {
+                let data = e.data;
+                OpenShop(data.link)
+            })
+
+            function OpenShop(storeURL) {
+                window.invokeNative('openUrl', storeURL)
+            }
+        </script>
+    </body>
+</html>

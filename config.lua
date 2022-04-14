@@ -1,7 +1,10 @@
 Config = {
     language = 'en',
+    useBuySystem = false, -- do you want to make it possible to buy the vehicles
+    useESX = false, 
     locations = {
         {
+            vehicleSpawn = vector3(0.0, 0.0, 0.0),
             entry = vector3(-32.85, -1102.21, 26.42),
             renderDistance = 30.0, -- vehicle spawn
             rotDist = 20.0, -- rotation distance (must be smaller than render distance)
@@ -41,6 +44,7 @@ Config = {
                         text = 'A nice car', -- Shouldn't be too long
                         maxSp = 300, -- maxspeed
                         price = 500, -- price !!! YOU CAN'T BUY THE CAR IN THIS SCRIPT !!!!!!
+                        buyable = false, -- no wait.... You can buy them now! :)
                     }, 
                     cam = {
                         enabled = true,
@@ -68,6 +72,7 @@ Config = {
                         text = 'A nice car', -- Shouldn't be too long
                         maxSp = 300, -- maxspeed
                         price = 500, -- price !!! YOU CAN'T BUY THE CAR IN THIS SCRIPT !!!!!!
+                        buyable = true,  -- no wait.... You can buy them now! :)
                     }, 
                     cam = {
                         enabled = true,
@@ -95,6 +100,7 @@ Config = {
                         text = 'A nice car', -- Shouldn't be too long
                         maxSp = 300, -- maxspeed
                         price = 500, -- price !!! YOU CAN'T BUY THE CAR IN THIS SCRIPT !!!!!!
+                        buyable = false,  -- no wait.... You can buy them now! :)
                     }, 
                     cam = {
                         enabled = true,

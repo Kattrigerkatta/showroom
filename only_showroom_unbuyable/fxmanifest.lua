@@ -10,11 +10,7 @@ files {
 ui_page 'html/index.html'
 
 client_scripts {
+    'locales.lua',
     'config.lua',
-    'client/locales.lua',
-    'client/client.lua',
-}
-
-server_scripts {
-    'server/server.lua',
+    'client.lua',
 }
